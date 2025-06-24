@@ -43,8 +43,7 @@ pip install -r requirements.txt
 ```
 python application.py
 ```
-The application will be avaliable at ```http://127.0.0.1:8000/``` (Elastic Beastalk listening port 8000)
-
+* The application will be avaliable at ```http://127.0.0.1:8000/``` (Elastic Beastalk listening port 8000)
 5. Deployed to AWS Elastic Beanstalk
 * Zip the entire folder (including ```.ebextensions/```)
 * Create an Elastic Beanstalk web server environment
