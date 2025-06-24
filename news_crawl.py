@@ -134,8 +134,6 @@ def crawl_cnyes(news = 10):
         tag.select_one('h3.jsx-1986041679').text.strip(): base_url + tag.get("href") if tag.get("href").startswith("/") else tag.get("href")
         for tag in soup.select('.jsx-1986041679.news')
     }
-
-
     
     driver.quit()
     
@@ -164,7 +162,6 @@ title_regex = {
 
 def news(news_website='cnyes', news=5):
        
-
     print(f'Crawl website: {news_website}')
     articles = website[news_website](news)
 
@@ -174,7 +171,6 @@ def news(news_website='cnyes', news=5):
         pattern = re.compile(r'.*' + re.escape(keyword) + r'.*')
         
         # Search for titles containing specific characters and their links
-        # results = {title: link for title, link in data.items() if pattern.match(title)}
         results = {title: link for title, link in articles.items() if pattern.match(title)}
         
         
