@@ -36,9 +36,9 @@ pip install -r requirements.txt
  OpenAI(api_key = <api_key>)
  ```
 * Set your s3 bucket in ```application.py```
-  ```
-  bucket_name = <your becket name>
-  ```
+ ```
+ bucket_name = <your becket name>
+ ```
 4. Local testing
 ```
 python application.py
