@@ -27,23 +27,25 @@ Include three parts:
     ```
     git clone <repo-url>
     ```
-3. Install dependencies
-```
-pip install -r requirements.txt
-```
+2. Install dependencies
+
+    ```
+    pip install -r requirements.txt
+    ```
 3. Set Variables before running
+
 * Set your OpenAI API key in ```news_crawl.py```
- ```
- OpenAI(api_key = <api_key>)
- ```
+     ```
+     OpenAI(api_key = <api_key>)
+     ```
 * Set your s3 bucket in ```application.py```
- ```
- bucket_name = <your becket name>
- ```
+     ```
+     bucket_name = <your becket name>
+     ```
 4. Local testing
-```
-python application.py
-```
+    ```
+    python application.py
+    ```
 * The application will be avaliable at ```http://127.0.0.1:8000/``` (Elastic Beastalk listening port 8000)
 5. Deployed to AWS Elastic Beanstalk
 * Zip the entire folder (including ```.ebextensions/```)
