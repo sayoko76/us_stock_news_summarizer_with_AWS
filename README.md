@@ -34,11 +34,13 @@ Include three parts:
     ```
 3. Set Variables before running
 
-* Set your OpenAI API key in ```news_crawl.py```
+    * Set your OpenAI API key in ```news_crawl.py```
+      
      ```
      OpenAI(api_key = <api_key>)
      ```
-* Set your s3 bucket in ```application.py```
+   * Set your s3 bucket in ```application.py```
+     
      ```
      bucket_name = <your becket name>
      ```
@@ -46,9 +48,9 @@ Include three parts:
     ```
     python application.py
     ```
-* The application will be avaliable at ```http://127.0.0.1:8000/``` (Elastic Beastalk listening port 8000)
+    * The application will be avaliable at ```http://127.0.0.1:8000/``` (Elastic Beastalk listening port 8000)
 5. Deployed to AWS Elastic Beanstalk
-* Zip the entire folder (including ```.ebextensions/```)
-* Create an Elastic Beanstalk web server environment
-* Upload your zip file
+    * Zip the entire folder (including ```.ebextensions/```)
+    * Create an Elastic Beanstalk web server environment
+    * Upload your zip file
 Elastic Beanstalk will deploy the application and save the summary to your bucket
