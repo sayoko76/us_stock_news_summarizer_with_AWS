@@ -32,7 +32,7 @@ def news_crawl():
     
     try:
         file_name = f'US_stocks_news_{datetime.date.today().isoformat()}.txt'
-        bucket_name = 'news-crawl-sayoko76' 
+        bucket_name = <bucket name>
         
         s3 = boto3.client('s3')
         s3.put_object(Bucket=bucket_name, Key=file_name, Body=summary.encode('utf-8'))
